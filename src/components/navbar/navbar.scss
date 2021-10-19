@@ -1,0 +1,28 @@
+@import "../../custom.scss";
+
+.navbar {
+    background-color: $gelb;
+    border-bottom: 1rem solid rgb(129, 250, 8);
+
+
+    & .dropdown-menu {
+        background-color: $gelb;
+        border: 0.3rem solid rgb(129, 250, 8);
+        & li {
+            padding-bottom: 0.2rem;
+            & :hover {
+                background-color: rgb(129, 250, 8);
+                border-bottom: 0.2rem solid $rot;
+                padding-bottom: 0rem;
+            }
+
+        }
+    }
+}
+.navbar-brand {
+    @extend .p-3;
+    @extend .rounded;
+    @extend .shadow;
+    color: $gelb !important;
+    background-color: rgb(96, 11, 107);
+}

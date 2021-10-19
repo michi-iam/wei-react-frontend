@@ -1,0 +1,28 @@
+@import "../../../../../custom.scss";
+
+.PostMitImage {
+    position: relative;
+
+}
+
+.PostMitImageTitleDiv {
+      
+        @extend .text-center;
+        position: absolute;
+        top: 50;
+        left: 50;
+        z-index: 10;
+        background-color: rgba(172, 74, 236, 0.5);
+        color: rgb(255, 241, 42);
+       
+        @extend .pt-5;
+        @extend .pb-5;
+        
+ 
+}
+
+.PostMitImageText {
+    @extend .p-5;
+    @extend .font-monospace;
+    background-color: rgba(172, 74, 236, 0.5);
+}
