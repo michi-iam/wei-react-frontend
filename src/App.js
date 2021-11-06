@@ -10,7 +10,7 @@ function App() {
         <div id="showfield" className="showfield row justify-content-center">
 
         </div>
-        <div className="container overflow-hidden">
+        <div className="overflow-hidden">
           <Category />
         </div>
     </div>

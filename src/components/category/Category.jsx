@@ -20,7 +20,7 @@ class Category extends React.Component {
         axios.get(URL_GET_CATEGORIES)
           .then(res => {
             const data = res.data;
-           this.setState({ category: res.data.categories}) // replace fake backend
+           this.setState({ category: data.categories}) // replace fake backend
           })
       }
    
@@ -28,7 +28,7 @@ class Category extends React.Component {
     render () {
         var category = this.state.category;
         category = category.sort((a, b) => (a.order > b.order ? 1 : -1))
-      return <div className="row justify-content-center">
+      return <div className="">
           {Object.keys(category).map(function(keyName, keyIndex){ // Posts for each category
                 return <Posts category={category[keyName]} key={ keyIndex }></Posts>
                 })}
