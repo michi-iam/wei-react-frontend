@@ -1,5 +1,5 @@
 import React from 'react';
-import "./template2.scss";
+
 
 import MeinCarousel from "../../../image/Carousel";
 import Link from "../../../link/Link";

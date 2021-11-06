@@ -1,6 +1,7 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import "./carousel.scss";
+
+
 class MeinCarousel extends React.Component {
     constructor(props) {
         super(props)

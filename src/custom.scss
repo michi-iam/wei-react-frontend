@@ -44,4 +44,10 @@ $theme-colors: (
 }
 
 // Import Bootstrap and its default variables
-@import '~bootstrap/scss/bootstrap.scss';
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+@import "./components/category/image/carousel";
+@import "./components/category/post/templates/template1/template1";
+@import "./components/category/post/templates/template2/template2";
+@import "./components/category/post/templates/template3/template3";
+@import "./components/navbar/navbar";

@@ -1,6 +1,6 @@
 import React from 'react';
 import MeinCarousel from "../../../image/Carousel";
-import "./template3.scss";
+
 import Link from "../../../link/Link";
 const SeitenText = ({ seitenText }) => {
     return <div className="border border-rot border-2 p-3 mt-3 bg-gelb">

@@ -1,5 +1,4 @@
 import React from 'react';
-import "./template1.scss"
 import Image from "../../../image/Image";
 import Link from "../../../link/Link";
 
@@ -38,6 +37,9 @@ const Links = ( { links } ) => {
 
 
 const PostWithImage = ({ title, mainImage, subTitle, text, image, image_alt, links, images, seitenText  }) => {
+    console.log("links")
+    console.log("links")
+    console.log(links)
     return <div className='row justify-content-center PostMitImage'>
        
         <img src={ mainImage.src } alt={ image_alt } />
@@ -50,7 +52,7 @@ const PostWithImage = ({ title, mainImage, subTitle, text, image, image_alt, lin
         </div>
         <div className="row justify-content-center">
             <div className="col-12 col-lg-3 PostMitImageText order-2 order-lg-1">
-                { links ? 
+                { links > 0 ? 
                 <div className="row">
                     <Links links={ links }></Links>
                 </div>
@@ -59,7 +61,7 @@ const PostWithImage = ({ title, mainImage, subTitle, text, image, image_alt, lin
                     <div className="row">
                     <Images images={ images }></Images> 
                     </div>
-                : ""}
+                : "" }
                 { seitenText ? 
                 <div className="row">
                     <SeitenText seitenText={ seitenText }></SeitenText>
@@ -97,8 +99,6 @@ class Template1 extends React.Component {
     render () {
         return <div> 
         <PostWithImage title={ this.props.title } mainImage={ this.state.mainImage } subTitle={ this.props.subTitle } text={ this.props.text } image={ this.state.mainImage.src } image_alt={ this.state.mainImage.alt } links={ this.props.links } images={ this.props.images } seitenText={ this.props.seitenText }></PostWithImage> 
-       
-     
         </div>
     }
   }
