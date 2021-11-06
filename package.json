@@ -6,11 +6,17 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "ansi-html-community": "0.0.8",
+    "ansi-regex": "^6.0.1",
     "axios": "^0.23.0",
     "bootstrap": "^5.1.1",
+    "browserslist": "^4.17.6",
+    "glob-parent": "^5.1.2",
+    "immer": "^9.0.6",
     "node-sass": "^6.0.1",
     "react": "^17.0.2",
     "react-bootstrap": "^2.0.0-rc.1",
+    "react-dev-utils": "^11.0.4",
     "react-device-detect": "^2.0.1",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
@@ -30,7 +36,7 @@
   },
   "browserslist": {
     "production": [
-      ">0.2%",
+      ">4.16",
       "not dead",
       "not op_mini all"
     ],
@@ -39,5 +45,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "resolutions": {
+    "**/glob-parent": "^5.1.2",
+    "**/immer": "^9.0.6",
+    "**/set-value": "^4.0.1"
+   
   }
 }
