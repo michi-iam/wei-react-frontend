@@ -37,18 +37,11 @@ const Links = ( { links } ) => {
 
 
 const PostWithImage = ({ title, mainImage, subTitle, text, image, image_alt, links, images, seitenText  }) => {
-    console.log("links")
-    console.log("links")
-    console.log(links)
     return <div className='row justify-content-center PostMitImage'>
-       
         <img src={ mainImage.src } alt={ image_alt } />
-        
         <div className="row PostMitImageTitleDiv">
-         
             <h1>{title}</h1>
             <h2>{subTitle}</h2>
-
         </div>
         <div className="row justify-content-center">
             <div className="col-12 col-lg-3 PostMitImageText order-2 order-lg-1">

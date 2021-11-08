@@ -6,6 +6,8 @@ $body-bg: rgb(173, 238, 211);
 $purple: rgba(86, 4, 88, 0.5);
 $purpletrans: rgba(217, 172, 218, 0.5);
 
+$catTitle: rgba(34, 0, 44, 0.5);
+
 $theme-colors: (
     "info": tomato,
     "danger": teal,
@@ -43,6 +45,14 @@ $theme-colors: (
     color: rgb(255, 241, 42);
 }
 
+.MyCatTitle {
+    @extend .p-3;
+    @extend .shadow-lg;
+    @extend .mt-5;
+    @extend .mb-3;
+    border-top-right-radius: 3rem;
+    background-color: $catTitle;
+}
 // Import Bootstrap and its default variables
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 
@@ -51,3 +61,5 @@ $theme-colors: (
 @import "./components/category/post/templates/template2/template2";
 @import "./components/category/post/templates/template3/template3";
 @import "./components/navbar/navbar";
+
+

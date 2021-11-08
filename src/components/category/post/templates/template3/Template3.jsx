@@ -13,6 +13,8 @@ const SeitenText = ({ seitenText }) => {
 
 const Links = ( { links } ) => {
     return <div className="bg-gelb p-5 mb-2 rounded shadow-lg border border-rot border-2">
+                 
+        <h4>Links</h4>
         { Object.keys(links).map(function(keyName, keyIndex){
             return <Link link={links[keyName]} key={ keyIndex }></Link>
         }) }

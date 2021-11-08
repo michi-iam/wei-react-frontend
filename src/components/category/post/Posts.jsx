@@ -7,7 +7,7 @@ import Template4 from "./templates/template4/Template4";
 
 
 const CatName = ({ catName }) => {
-  return <h1 className="text-center p-3 bg-info rounded shadow mt-5">{ catName }</h1>
+  return <h1 className="MyCatTitle">{ catName }</h1>
 }
 
 

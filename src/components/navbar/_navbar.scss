@@ -21,6 +21,7 @@
 }
 .navbar-brand {
     @extend .p-3;
+    @extend .ms-lg-2;
     @extend .rounded;
     @extend .shadow;
     color: $gelb !important;

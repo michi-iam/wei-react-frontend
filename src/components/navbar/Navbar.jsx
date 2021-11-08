@@ -43,7 +43,7 @@ class MeineNavbar extends React.Component {
     render () {
       var categories = this.state.categories;
       return <Navbar bg="light" expand="lg" sticky="top">
-      <Navbar.Brand href="#">Teil dein Schmeil</Navbar.Brand>
+      <Navbar.Brand href="">Teil dein Schmeil</Navbar.Brand>
       <Navbar.Toggle aria-controls="navbarScroll" />
       <Navbar.Collapse id="navbarScroll">
         <Nav
